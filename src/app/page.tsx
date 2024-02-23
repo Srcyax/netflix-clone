@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<div className="text-white">
 			<img
-				className="-z-20 bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full md:max-w-full md:max-h-full"
+				className="-z-20 bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full"
 				src="images/netflix_bg.png"
 				alt=""
 			/>
@@ -24,7 +24,7 @@ export default function Home() {
 				</div>
 			</header>
 			<main className="flex flex-col justify-center items-center">
-				<div className="mt-44 mb-48 w-screen">
+				<div className="mt-44 max-[600px]:mt-16 mb-48 w-screen">
 					<h1 className="text-center">
 						<strong className="text-[48px] max-[600px]:text-[38px]">
 							Filmes, séries e muito mais, sem limites
