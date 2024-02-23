@@ -8,7 +8,7 @@ export default function Home() {
 				src="images/netflix_bg.png"
 				alt=""
 			/>
-			<div className="-z-10 absolute top-0 w-full max-[600px]:w-screen h-screen scale-y-150 bg-black opacity-70"></div>
+			<div className="-z-10 bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full bg-black opacity-70"></div>
 			<header className="flex justify-between items-center mx-44 max-[600px]:mx-3 my-5">
 				<img className="w-32 max-[600px]:w-24" src="images/icon.png" alt="" />
 				<div className="flex gap-7 max-[600px]:gap-2">
@@ -24,7 +24,7 @@ export default function Home() {
 				</div>
 			</header>
 			<main className="flex flex-col justify-center items-center">
-				<div className="mt-44 max-[600px]:mt-16 mb-48 w-screen">
+				<div className="mt-44 max-[600px]:mt-16 mb-48">
 					<h1 className="text-center">
 						<strong className="text-[48px] max-[600px]:text-[38px]">
 							Filmes, séries e muito mais, sem limites
