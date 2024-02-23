@@ -31,7 +31,7 @@
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   },
-  "description": "",
+  "description": "1. **Clone o Repositório**: `git clone https://github.com/seunome/netflix-clone.git`\r 2. **Instale as Dependências**: `cd netflix-clone && npm install`\r 3. **Execute o Projeto**: `npm run dev`\r 4. **Acesse no Navegador**: Abra seu navegador e vá para `http://localhost:3000`",
   "main": "postcss.config.js",
   "author": "",
   "license": "ISC"
