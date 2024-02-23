@@ -1,6 +1,10 @@
+"use client";
 import { ChevronRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+	const router = useRouter();
+
 	return (
 		<div className="text-white">
 			<img
@@ -20,7 +24,14 @@ export default function Home() {
 						<option value="pt">Português</option>
 						<option value="en">English</option>
 					</select>
-					<button className="bg-red px-5 py-2 rounded-md text-[14px]">Entrar</button>
+					<button
+						onClick={() => {
+							router.push("/login");
+						}}
+						className="bg-red px-5 py-2 rounded-md text-[14px]"
+					>
+						Entrar
+					</button>
 				</div>
 			</header>
 			<main className="flex flex-col justify-center items-center">
