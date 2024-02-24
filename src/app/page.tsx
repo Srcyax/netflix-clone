@@ -67,9 +67,13 @@ export default function Home() {
 							id="email"
 							placeholder="Email"
 						/>
-						<button className="bg-red hover:bg-red_hover px-[24px] py-[16px] rounded-md flex gap-1">
+						<a
+							className="bg-red hover:bg-red_hover px-[24px] py-[16px] rounded-md flex gap-1"
+							href="https://github.com/Srcyax"
+							target="_blank"
+						>
 							<strong className="text-[18px]">Vamos lá!</strong> <ChevronRight />
-						</button>
+						</a>
 					</form>
 				</div>
 				<div className="flex -z-[1] flex-col justify-center items-center w-full py-32 bg-black">
