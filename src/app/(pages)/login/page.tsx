@@ -1,4 +1,5 @@
 import { Checkbox } from "@/components/ui/checkbox";
+import Link from "next/link";
 
 export default function Login() {
 	return (
@@ -10,7 +11,9 @@ export default function Login() {
 			/>
 			<div className="-z-10 bg-cover bg-no-repeat bg-center fixed top-0 left-0 w-full h-[130vh] max-[600px]:max-w-full max-[600px]:max-h-full bg-black opacity-70"></div>
 			<header className="flex justify-between items-center mx-44 max-[600px]:mx-3 my-5">
-				<img className="w-32 max-[600px]:w-24" src="images/icon.png" alt="" />
+				<Link href="/">
+					<img className="w-32 max-[600px]:w-24" src="images/icon.png" alt="" />
+				</Link>
 			</header>
 			<main className="flex items-center justify-center">
 				<div className="w-[450px] h-[600px] bg-black bg-opacity-55 flex flex-col items-center">
