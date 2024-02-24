@@ -2,6 +2,13 @@
 import { ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTrigger,
+} from "@/components/ui/accordion";
+
 export default function Home() {
 	const router = useRouter();
 
@@ -168,9 +175,153 @@ export default function Home() {
 							<img src="images/mobile-0819.png" alt="" />
 						</div>
 					</div>
-					<div className="bg-zinc-700 z-0 w-full h-3 m-14">‎</div>
+					<div className="bg-zinc-700 z-0 w-full h-3 mt-14">‎</div>
 				</div>
 			</main>
+			<footer className="flex flex-col justify-center items-center bg-black">
+				<div className="flex flex-col gap-10 mb-10">
+					<h1 className="text-5xl font-bold">Perguntas frequentes</h1>
+					<div className="w-full">
+						<Accordion type="single" collapsible className="w-full">
+							<AccordionItem value="item-1">
+								<AccordionTrigger>O que é a Netflix?</AccordionTrigger>
+								<AccordionContent className="text-zinc-500">
+									A Netflix é um serviço de streaming que oferece uma ampla variedade de
+									<br />
+									séries, filmes e documentários premiados em milhares de aparelhos
+									<br />
+									conectados à internet. Você pode assistir a quantos filmes e séries
+									<br />
+									quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui
+									<br />
+									você sempre encontra novidades. A cada semana, adicionamos novas séries
+									e filmes.
+								</AccordionContent>
+							</AccordionItem>
+							<AccordionItem value="item-2">
+								<AccordionTrigger>Quanto custa a Netflix?</AccordionTrigger>
+								<AccordionContent className="text-zinc-500">
+									Assista à Netflix no seu celular, tablet, Smart TV, notebook ou
+									<br />
+									aparelho de streaming por uma taxa mensal única. Os planos variam de R$
+									<br />
+									18,90 a R$ 55,90 por mês. Sem contrato nem taxas extras.
+								</AccordionContent>
+							</AccordionItem>
+							<AccordionItem value="item-3">
+								<AccordionTrigger>Onde posso assistir?</AccordionTrigger>
+								<AccordionContent className="text-zinc-500">
+									Assista onde quiser, quando quiser. Faça login com sua conta Netflix em
+									<br />
+									netflix.com para começar a assistir no computador ou em qualquer
+									<br />
+									aparelho conectado à Internet compatível com o aplicativo Netflix, como
+									<br />
+									Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+									<br />
+									Você também pode baixar a sua série favorita com o aplicativo Netflix
+									<br />
+									para iOS, Android ou Windows 10. Use downloads para levar a Netflix
+									<br />
+									para onde quiser sem precisar de conexão com a Internet. Leve a Netflix
+									<br />
+									com você para qualquer lugar.
+								</AccordionContent>
+							</AccordionItem>
+							<AccordionItem value="item-4">
+								<AccordionTrigger>Como faço para cancelar?</AccordionTrigger>
+								<AccordionContent className="text-zinc-500">
+									A Netflix é flexível. Não há contratos nem compromissos. Você pode
+									<br />
+									cancelar a sua conta na internet com apenas dois cliques. Não há taxa
+									<br />
+									de cancelamento – você pode começar ou encerrar a sua assinatura a
+									<br />
+									qualquer momento.
+								</AccordionContent>
+							</AccordionItem>
+							<AccordionItem value="item-5">
+								<AccordionTrigger>O que eu posso assistir na Netflix?</AccordionTrigger>
+								<AccordionContent className="text-zinc-500">
+									A Netflix tem um grande catálogo de filmes, documentários, séries,
+									<br />
+									originais Netflix premiados e muito mais. Assista o quanto quiser,
+									<br />
+									quando quiser.
+								</AccordionContent>
+							</AccordionItem>
+							<AccordionItem value="item-6">
+								<AccordionTrigger>A Netflix é adquada para crianças?</AccordionTrigger>
+								<AccordionContent className="text-zinc-500">
+									A experiência infantil da Netflix faz parte da sua assinatura para que
+									<br />
+									as crianças se divirtam em seu próprio espaço com séries e filmes
+									<br />
+									familiares sob a supervisão dos responsáveis. O recurso de controle
+									<br />
+									parental, incluso nos perfis para crianças e protegido por PIN, permite
+									<br />
+									restringir a classificação etária do conteúdo que as crianças podem ver
+									<br />
+									e bloquear títulos específicos que você não quer que elas assistam.
+									<br />
+									quando quiser.
+								</AccordionContent>
+							</AccordionItem>
+						</Accordion>
+					</div>
+				</div>
+				<h1>
+					Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+				</h1>
+				<div className="flex flex-row gap-3 justify-center items-center m-3">
+					<input
+						className="px-[24px] py-[16px] w-[350px] max-[600px]:w-[350px] rounded-md bg-black opacity-70 border-2"
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Email"
+					/>
+					<button className="bg-red hover:bg-red_hover px-[24px] py-[16px] rounded-md flex gap-1">
+						<strong className="text-[18px]">Vamos lá!</strong> <ChevronRight />
+					</button>
+				</div>
+				<div className="bg-zinc-700 z-0 w-full h-3 m-14">‎</div>
+				<div className="w-full px-28 flex flex-col gap-5">
+					<h1>Dúvidas? Ligue 0800 591 2876</h1>
+					<div className="grid grid-cols-4 grid-rows-5 gap-5">
+						<h1 className="text-zinc-500 underline">Perguntas frequentes</h1>
+						<h1 className="text-zinc-500 underline">Central de Ajuda</h1>
+						<h1 className="text-zinc-500 underline">Conta</h1>
+						<h1 className="text-zinc-500 underline">Media Center</h1>
+						<h1 className="text-zinc-500 underline">Relações com investidores</h1>
+						<h1 className="text-zinc-500 underline">Carreiras</h1>
+						<h1 className="text-zinc-500 underline">Resgatar cartão pré-pago</h1>
+						<h1 className="text-zinc-500 underline">Comprar cartão pré-pago</h1>
+						<h1 className="text-zinc-500 underline">Formas de assistir</h1>
+						<h1 className="text-zinc-500 underline">Termos de Uso</h1>
+						<h1 className="text-zinc-500 underline">Privacidade</h1>
+						<h1 className="text-zinc-500 underline">Preferências de cookies</h1>
+						<h1 className="text-zinc-500 underline">Informações corporativas</h1>
+						<h1 className="text-zinc-500 underline">Entre em contato</h1>
+						<h1 className="text-zinc-500 underline">Teste de velocidade</h1>
+						<h1 className="text-zinc-500 underline">Avisos legais</h1>
+						<h1 className="text-zinc-500 underline">Só na Netflix</h1>
+					</div>
+					<div className="mt-5">
+						<select
+							className="bg-black opacity-70 rounded-md px-5 py-2 max-[600px]:px-2 border-2 text-[14px] border-zinc-600"
+							name="lang"
+							id="lang-select"
+						>
+							<option value="pt">Português</option>
+							<option value="en">English</option>
+						</select>
+					</div>
+					<h1 className="text-[13px] text-zinc-300 ml-1 mb-5">Netflix Brasil</h1>
+				</div>
+				<div className="w-full h-3 m-14">‎</div>
+			</footer>
 		</div>
 	);
 }
