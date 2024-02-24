@@ -61,7 +61,7 @@ export default function Login() {
 						<p className="text-[12px] text-zinc-400">
 							Esta página é protegida pelo Google reCAPTCHA para garantir que você não
 							é um robô.
-							<strong className="text-blue-500 hover:underline">Saiba mais.</strong>
+							<strong className="text-blue-500 hover:underline"> Saiba mais.</strong>
 						</p>
 					</div>
 				</div>
