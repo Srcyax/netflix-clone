@@ -60,9 +60,9 @@ export default function Login() {
 					</div>
 				</div>
 			</main>
-			<footer className="absolute -bottom-64 left-0 right-0 px-32 py-10 bg-black bg-opacity-50">
+			<footer className="absolute -bottom-64 left-0 right-0 px-32 max-[555px]:px-20 py-10 bg-black bg-opacity-50">
 				<h1 className="mb-5">Dúvidas? Ligue 0800 591 2876</h1>
-				<div className="grid grid-cols-4 grid-rows-2 gap-5">
+				<div className="grid grid-cols-4 grid-rows-2 gap-5 max-[555px]:grid-cols-2 max-[555px]:grid-rows-3">
 					<p className="text-[13px] text-zinc-400 underline">Perguntas frequentes</p>
 					<p className="text-[13px] text-zinc-400 underline">Central de Ajuda</p>
 					<p className="text-[13px] text-zinc-400 underline">Termos de Uso</p>
