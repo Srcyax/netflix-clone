@@ -18,8 +18,12 @@ const config = {
 			},
 		},
 		extend: {
+			backgroundImage: {
+				stranger_thigs: "url('/videos/download-icon.gif')",
+			},
 			colors: {
 				red: "#e50914",
+				red_hover: "#c11119",
 				dark_blue: "#00092b",
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",

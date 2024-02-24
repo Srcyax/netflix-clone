@@ -8,11 +8,11 @@ export default function Home() {
 	return (
 		<div className="text-white">
 			<img
-				className="-z-20 bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full"
+				className="-z-[3] bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full"
 				src="images/netflix_bg.png"
 				alt=""
 			/>
-			<div className="-z-10 bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full bg-black opacity-70"></div>
+			<div className="-z-[2] bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full bg-black opacity-70"></div>
 			<header className="flex justify-between items-center mx-44 max-[600px]:mx-3 my-5">
 				<img className="w-32 max-[600px]:w-24" src="images/icon.png" alt="" />
 				<div className="flex gap-7 max-[600px]:gap-2">
@@ -28,7 +28,7 @@ export default function Home() {
 						onClick={() => {
 							router.push("/login");
 						}}
-						className="bg-red px-5 py-2 rounded-md text-[14px]"
+						className="bg-red hover:bg-red_hover px-5 py-2 rounded-md text-[14px]"
 					>
 						Entrar
 					</button>
@@ -60,12 +60,12 @@ export default function Home() {
 							id="email"
 							placeholder="Email"
 						/>
-						<button className="bg-red px-[24px] py-[16px] rounded-md flex gap-1">
+						<button className="bg-red hover:bg-red_hover px-[24px] py-[16px] rounded-md flex gap-1">
 							<strong className="text-[18px]">Vamos lá!</strong> <ChevronRight />
 						</button>
 					</form>
 				</div>
-				<div className="flex justify-center items-center w-full py-32 bg-black">
+				<div className="flex -z-[1] flex-col justify-center items-center w-full py-32 bg-black">
 					<div className="-mt-56 w-11/12 h-40 max-[600px]:h-48 flex flex-row justify-center items-center gap-4 m-5 bg-gradient-to-r from-dark_blue from-10% via-red via-40% to-dark_blue to-90%">
 						<img width={120} src="images/popcorn.png" alt="" />
 						<div>
@@ -78,6 +78,97 @@ export default function Home() {
 							</a>
 						</div>
 					</div>
+					<div className="mt-10 flex flex-row max-[965px]:flex-col justify-center items-center text-center">
+						<div className="flex flex-col gap-4 w-[474px] max-[430px]:w-[408px]">
+							<h1 className="text-5xl sm:2xl font-bold">
+								<strong>Aproveite na TV</strong>
+							</h1>
+							<p className="text-[20px]">
+								Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos
+								de Blu-ray e outros dispositivos.
+							</p>
+						</div>
+						<div className="overflow-hidden">
+							<video
+								className="absolute -z-[1] max-[965px]:w-[475px] max-[430px]:w-[330px] ml-[75px] max-[430px]:ml-[40px] mt-[92px] max-[430px]:mt-[70px]"
+								src="videos/video-tv-0819.mp4"
+								autoPlay
+								muted
+								loop
+							></video>
+							<img src="images/tv.png" alt="" />
+						</div>
+					</div>
+					<div className="bg-zinc-700 z-0 w-full h-3 m-14">‎</div>
+					<div className="flex flex-row max-[965px]:flex-col justify-center items-center text-center">
+						<div className="overflow-hidden">
+							<video
+								className="absolute -z-[1] w-96 max-[1090px]:w-[300px] max-[965px]:w-[385px] max-[540px]:w-[310px] max-[430px]:w-[225px] ml-[115px] max-[430px]:ml-[90px] mt-[50px]"
+								src="videos/video-devices.mp4"
+								autoPlay
+								muted
+								loop
+							></video>
+							<img
+								className="max-[605px]:w-[600px]"
+								src="images/device-pile.png"
+								alt=""
+							/>
+						</div>
+						<div className="flex flex-col gap-4 w-[508px] max-[430px]:w-[408px]">
+							<h1 className="text-5xl max-[600px]:2xl font-bold">
+								<strong>Assista onde quiser</strong>
+							</h1>
+							<p className="text-[20px]">
+								Assista a quantos filmes e séries quiser no celular, tablet, laptop e
+								TV.
+							</p>
+						</div>
+					</div>
+					<div className="bg-zinc-700 z-0 w-full h-3 m-14">‎</div>
+					<div className="mt-10 flex flex-row max-[965px]:flex-col justify-center items-center">
+						<div className="flex flex-col gap-4 w-[474px] max-[430px]:w-[408px]">
+							<h1 className="text-5xl sm:2xl font-bold">
+								<strong>Crie perfis para crianças</strong>
+							</h1>
+							<p className="text-[20px]">
+								Deixe as crianças se aventurarem com seus personagens favoritos em um
+								espaço feito só para elas, sem pagar a mais por isso.
+							</p>
+						</div>
+						<div className="overflow-hidden">
+							<img src="images/infantil.png" alt="" />
+						</div>
+					</div>
+					<div className="bg-zinc-700 z-0 w-full h-3 m-14">‎</div>
+					<div className="mt-10 flex flex-row max-[965px]:flex-col justify-center items-center">
+						<div className="flex flex-col gap-4 w-[474px] max-[430px]:w-[408px]">
+							<h1 className="text-5xl sm:2xl font-bold">
+								<strong>Baixe séries para assistir offline</strong>
+							</h1>
+							<p className="text-[20px]">Assista em um avião, trem ou submarino...</p>
+						</div>
+						<div className="overflow-hidden">
+							<div className="absolute flex flex-row gap-5 z-0 w-[414px] max-[430px]:w-[300px] max-[430px]:h-[69px] p-3 border-2 bg-black rounded-lg ml-28 max-[430px]:ml-16 mt-80 max-[430px]:mt-56">
+								<img className="w-[47px]" src="images/boxshot.png" alt="" />
+								<div className="mt-2 max-[430px]:-mt-2 w-[280px] max-[430px]:w-[380px]">
+									<h1 className="max-[430px]:text-[14px] max-[430px]:w-[140px]">
+										Stranger Things
+									</h1>
+									<p className="text-[15px] max-[430px]:text-[12px] max-[430px]:w-[140px] text-blue-600">
+										Download em andamento...
+									</p>
+								</div>
+								<img
+									className="w-[48px] h-[48px] mt-3 max-[430px]:-mt-1"
+									src="videos/download-icon.gif"
+									alt=""
+								/>
+							</div>
+							<img src="images/mobile-0819.png" alt="" />
+						</div>
+					</div>
+					<div className="bg-zinc-700 z-0 w-full h-3 m-14">‎</div>
 				</div>
 			</main>
 		</div>
