@@ -180,8 +180,10 @@ export default function Home() {
 			</main>
 			<footer className="flex flex-col justify-center items-center bg-black">
 				<div className="flex flex-col gap-10 mb-10">
-					<h1 className="text-5xl font-bold">Perguntas frequentes</h1>
-					<div className="w-full">
+					<h1 className="text-5xl font-bold max-[555px]:text-[30px] text-center">
+						Perguntas frequentes
+					</h1>
+					<div className="w-full max-[555px]:px-5">
 						<Accordion type="single" collapsible className="w-full">
 							<AccordionItem value="item-1">
 								<AccordionTrigger>O que é a Netflix?</AccordionTrigger>
@@ -271,10 +273,10 @@ export default function Home() {
 						</Accordion>
 					</div>
 				</div>
-				<h1>
+				<h1 className="max-[555px]:text-center">
 					Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
 				</h1>
-				<div className="flex flex-row gap-3 justify-center items-center m-3">
+				<div className="flex flex-row max-[555px]:flex-col gap-3 justify-center items-center m-3">
 					<input
 						className="px-[24px] py-[16px] w-[350px] max-[600px]:w-[350px] rounded-md bg-black opacity-70 border-2"
 						type="email"
@@ -287,9 +289,9 @@ export default function Home() {
 					</button>
 				</div>
 				<div className="bg-zinc-700 z-0 w-full h-3 m-14">‎</div>
-				<div className="w-full px-28 flex flex-col gap-5">
+				<div className="w-full px-28 max-[555px]:px-4 flex flex-col gap-5">
 					<h1>Dúvidas? Ligue 0800 591 2876</h1>
-					<div className="grid grid-cols-4 grid-rows-5 gap-5">
+					<div className="grid grid-cols-4 grid-rows-5 gap-5 max-[555px]:gap-2 max-[555px]:grid-cols-2 max-[555px]:grid-rows-9">
 						<h1 className="text-zinc-500 underline">Perguntas frequentes</h1>
 						<h1 className="text-zinc-500 underline">Central de Ajuda</h1>
 						<h1 className="text-zinc-500 underline">Conta</h1>
