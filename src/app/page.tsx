@@ -15,11 +15,11 @@ export default function Home() {
 	return (
 		<div className="text-white">
 			<img
-				className="-z-[3] bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full"
+				className="-z-[3] bg-cover object-cover bg-no-repeat bg-center fixed top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full"
 				src="images/netflix_bg.png"
 				alt=""
 			/>
-			<div className="-z-[2] bg-cover bg-no-repeat bg-center absolute top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full bg-black opacity-70"></div>
+			<div className="-z-[2] bg-cover bg-no-repeat bg-center fixed top-0 left-0 w-full h-full max-[600px]:max-w-full max-[600px]:max-h-full bg-black opacity-70"></div>
 			<header className="flex justify-between items-center mx-44 max-[600px]:mx-3 my-5">
 				<img className="w-32 max-[600px]:w-24" src="images/icon.png" alt="" />
 				<div className="flex gap-7 max-[600px]:gap-2">
