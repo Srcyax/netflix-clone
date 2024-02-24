@@ -37,10 +37,13 @@ export default function Login() {
 							id="password"
 							placeholder="Senha"
 						/>
-
-						<button className="bg-red px-[120px] py-[10px] rounded-md flex gap-1 mb-2">
+						<a
+							className="bg-red px-[120px] py-[10px] rounded-md flex gap-1 mb-2"
+							href="https://github.com/Srcyax"
+							target="_blank"
+						>
 							<strong className="text-[18px]">Entrar</strong>
-						</button>
+						</a>
 					</div>
 
 					<h1>Esqueceu a senha?</h1>
