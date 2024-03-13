@@ -2,7 +2,7 @@
 
 ## Como Executar o Projeto
 
-1. **Clone o Repositório**: `git clone https://github.com/seunome/netflix-clone.git`
+1. **Clone o Repositório**: `git clone https://github.com/Srcyax/netflix-clone.git`
 2. **Instale as Dependências**: `cd netflix-clone && npm install`
 3. **Execute o Projeto**: `npm run dev`
 4. **Acesse no Navegador**: Abra seu navegador e vá para `http://localhost:3000`
